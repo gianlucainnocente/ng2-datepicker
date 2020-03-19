@@ -1,0 +1,32 @@
+{
+  "name": "ng2-datepicker",
+  "version": "3.1.1",
+  "main": "bundles/ng2-datepicker.umd.js",
+  "module": "fesm5/ng2-datepicker.js",
+  "es2015": "fesm2015/ng2-datepicker.js",
+  "typings": "ng2-datepicker.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bleenco/ng2-datepicker.git"
+  },
+  "authors": [
+    "Jan Kuri <jan@bleenco.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bleenco/ng2-datepicker/issues"
+  },
+  "homepage": "https://github.com/bleenco/ng2-datepicker#readme",
+  "dependencies": {
+    "date-fns": "^1.30.1"
+  },
+  "esm5": "esm5/ng2-datepicker.js",
+  "esm2015": "esm2015/ng2-datepicker.js",
+  "fesm5": "fesm5/ng2-datepicker.js",
+  "fesm2015": "fesm2015/ng2-datepicker.js",
+  "metadata": "ng2-datepicker.metadata.json",
+  "sideEffects": false,
+  "peerDependencies": {
+    "tslib": "^1.10.0"
+  }
+}
