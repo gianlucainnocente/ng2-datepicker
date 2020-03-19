@@ -26,9 +26,12 @@
     "e2e": "ng e2e",
     "clean": "rimraf dist",
     "prebuild:lib": "npm run clean",
+    "build:prod": "ng build --prod --base-href https://github.com/gianlucainnocente/ng2-datepicker/",
+    "copyfiles": "copyfiles -u 1 ./dist-lib/**/*.* node_modules/ng2-datepicker",
     "build:lib": "ng-packagr -p ng-package.json",
-    "prepublishOnly": "npm run build:lib",
-    "postinstall": "ngcc"
+    "postbuild:lib": "npm run copyfiles",
+    "prepublish": "npm run build:prod",
+    "prepublishOnly": "npm run build:lib"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",
@@ -47,6 +50,7 @@
     "@types/jasmine": "~2.8.7",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^10.0.10",
+    "copyfiles": "^2.0.0",
     "bulma": "^0.7.1",
     "codelyzer": "^4.3.0",
     "core-js": "^2.5.6",
