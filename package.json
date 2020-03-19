@@ -27,7 +27,8 @@
     "clean": "rimraf dist",
     "prebuild:lib": "npm run clean",
     "build:lib": "ng-packagr -p ng-package.json",
-    "prepublishOnly": "npm run build:lib"
+    "prepublishOnly": "npm run build:lib",
+    "postinstall": "ngcc"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.7",
