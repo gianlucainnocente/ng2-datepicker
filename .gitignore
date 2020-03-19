@@ -1,12 +1,3 @@
-dist/
-bundles/
 .DS_Store
 node_modules/
-lib/
-*.ngsummary.json
-*.ngfactory.ts
-*.ngstyle.ts
-*.d.ts
-.ng_pkg_build/
-dist.tgz
 /.idea/
